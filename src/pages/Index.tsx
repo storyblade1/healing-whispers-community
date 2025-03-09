@@ -7,6 +7,10 @@ import SupportForums from "@/components/SupportForums";
 import MindfulnessSection from "@/components/MindfulnessSection";
 import Testimonials from "@/components/Testimonials";
 import JoinCommunity from "@/components/JoinCommunity";
+import TeamSection from "@/components/TeamSection";
+import ResourcesHub from "@/components/ResourcesHub";
+import UpcomingEvents from "@/components/UpcomingEvents";
+import FAQ from "@/components/FAQ";
 
 const Index = () => {
   // Smooth scrolling for anchor links
@@ -38,7 +42,11 @@ const Index = () => {
       <FeaturedResources />
       <SupportForums />
       <MindfulnessSection />
+      <ResourcesHub />
+      <TeamSection />
+      <UpcomingEvents />
       <Testimonials />
+      <FAQ />
       <JoinCommunity />
     </MainLayout>
   );

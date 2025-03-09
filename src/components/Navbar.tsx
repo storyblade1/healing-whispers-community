@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Desktop navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-6">
             <a 
               href="#resources" 
               className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
@@ -59,10 +59,22 @@ const Navbar: React.FC = () => {
               Mindfulness
             </a>
             <a
-              href="#testimonials"
+              href="#events"
               className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
             >
-              Stories
+              Events
+            </a>
+            <a
+              href="#team"
+              className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
+            >
+              Team
+            </a>
+            <a
+              href="#faq"
+              className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
+            >
+              FAQ
             </a>
             <Button
               size="sm"
@@ -91,34 +103,53 @@ const Navbar: React.FC = () => {
       {/* Mobile menu */}
       {mobileMenuOpen && (
         <div className="md:hidden glass-panel absolute top-full left-0 right-0 animate-fade-in">
-          <div className="px-4 pt-2 pb-4 space-y-4">
+          <div className="px-4 pt-2 pb-4 space-y-2">
             <a
               href="#resources"
               className="block py-2 text-base font-medium text-foreground/90 hover:text-foreground"
+              onClick={() => setMobileMenuOpen(false)}
             >
               Resources
             </a>
             <a
               href="#forums"
               className="block py-2 text-base font-medium text-foreground/90 hover:text-foreground"
+              onClick={() => setMobileMenuOpen(false)}
             >
               Forums
             </a>
             <a
               href="#mindfulness"
               className="block py-2 text-base font-medium text-foreground/90 hover:text-foreground"
+              onClick={() => setMobileMenuOpen(false)}
             >
               Mindfulness
             </a>
             <a
-              href="#testimonials"
+              href="#events"
               className="block py-2 text-base font-medium text-foreground/90 hover:text-foreground"
+              onClick={() => setMobileMenuOpen(false)}
             >
-              Stories
+              Events
+            </a>
+            <a
+              href="#team"
+              className="block py-2 text-base font-medium text-foreground/90 hover:text-foreground"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Team
+            </a>
+            <a
+              href="#faq"
+              className="block py-2 text-base font-medium text-foreground/90 hover:text-foreground"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              FAQ
             </a>
             <Button
               size="sm"
               className="w-full bg-serenity-500 hover:bg-serenity-600 text-white mt-2"
+              onClick={() => setMobileMenuOpen(false)}
             >
               Join Now
             </Button>
