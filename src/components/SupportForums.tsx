@@ -1,6 +1,6 @@
 
 import React, { useEffect, useRef } from "react";
-import { MessageCircle, Users, Heart, Activity, ArrowRight } from "lucide-react";
+import { MessageCircle, Users, Heart, Activity, ArrowRight, Brain } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface ForumCardProps {
